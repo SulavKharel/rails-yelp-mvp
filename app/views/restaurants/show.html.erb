@@ -1,4 +1,26 @@
-<h1><%= @restaurant.name %></h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:3000/restaurants">Butcher</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:3000/restaurants">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:3000/restaurants">Restaurants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Category</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Create Restaurant
+    </span>
+  </div>
+</nav>
+<h1 class="navbar-nav"><%= @restaurant.name %></h1>
 <div class="container">
   <div class="row">
     <div class="col-12">
